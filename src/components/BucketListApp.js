@@ -5,8 +5,11 @@ import Action from './Action';
 import Options from './Options';
 import OptionModal from './OptionModal';
 
-export default class BucketListApp extends React.Component{
-
+export default class BucketListApp extends React.Component{ // export default can be tossed before class and not before others constants directly
+  //We removed the constructor and this binding statements by changing to arrow functions and class properties babel plugin
+  //This ensures we don't need to put let,const or any type before variables because its like a key value pair
+  //In functional stateless components,props is used instead of this.props because it is passed to the function
+  //Constructor also has props passed to it so it can be used instead of this.props
   state = {
     //options: props.options
     options: [],
