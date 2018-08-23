@@ -8,7 +8,7 @@
 
 .add-option {
   display: flex;
-  flex-direction: column; //Stacked up column-wise for mobile-devices
+  flex-direction: column; //Stacked up vertically for mobile-devices
   padding: $m-size;
 }
 
@@ -26,7 +26,7 @@
 
 @media(min-width: $desktop-size) {
   .add-option {
-    flex-direction: row; //Stacked up row-wise for desktop-devices
+    flex-direction: row; //Stacked up horizontally for desktop-devices
   }
 
   .add-option__input {
